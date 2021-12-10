@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #final-data{
+            font-size: 23px;
+            color: darkblue;
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+   
+        <input type="text" id="user" placeholder="Enter Username"> <br>
+        <input type="number" id="mobile" placeholder="Enter Mobile Number"> <br>
+        <input type="password" id="pass" placeholder="Enter Password"> <br>
+
+        <input type="submit" value="SUBMIT" onclick="showOutput()"> <br><br>
+
+        <p id="final-data">
+
+        </p>
+
+        <script>
+            function showOutput(){
+                var x,y,z
+                x = document.getElementById("user").value 
+                y = document.getElementById("mobile").value
+                z = document.getElementById("pass").value
+
+                // document.getElementById("final-data").innerHTML = "Name: "+x+"<br>Mobile Number: "+y+"<br>Password: "+z;
+                document.getElementById("final-data").innerHTML = `Name: ${x} <br> Mobile Number: ${y} <br> Password: ${z}`
+            }
+        </script>
+  
+</body>
+</html>
